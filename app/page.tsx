@@ -8,6 +8,7 @@ export default function Home() {
     .replace(/[,]/g, '') // Remove punctuation
     .split(' '); // Split the paragraph into individual words
 
+  // These are states to keep track of the word index and the typed word
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [typedWord, setTypedWord] = useState("");
 
